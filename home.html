@@ -1,0 +1,361 @@
+<html>
+  <head>
+    <title> Library Management | Admin </title>
+    <meta charset="utf-8">
+    <style> 
+    
+    #body{
+        margin: -10px;
+          margin-left: -10px;
+        width: 82%;
+        margin-left: 9%;
+        box-shadow: 1px -1px 11px -1px black;
+      }
+
+    h2{ text-decoration:underline;
+        text-align:center; }
+    .mainmenu { 
+         list-style-type:none;
+         margin:0;
+         padding: 0;
+         overflow:hidden;
+         background-color:#EBEFEF;
+         height:50;
+       }
+     
+
+   
+    li {
+         float:left;
+       }
+
+    li a {
+          display: block;
+          color: 3184FC;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration:none;
+         }
+   /* li a:hover {
+           background-color:#111;
+         } */
+     a{
+         color:73777D;      
+      }
+     </style>
+     
+
+
+
+ </head>
+   <body bgcolor="E7E4E4">
+   <table id="t1"> 
+  <tr> <td> <img src="book_logo.jpg" height="100px" width="100px" alt="book_logo" align="left"> <h3>Library Management - Admin</h3> </td>
+      <!--  Search: <input type="text" name="search">
+        Follow us <img src="t.png"><img src="f.png"><img src="g.png"><img src="y.png"><img src="l.png"><br> <div> <a href="home.html">Home |</a> <a href="eserv.html">e-Services |</a><a href="esah.html"> e-sahaayataa |</a> <a href="fdbk.html">Feedback |</a> <a href="digihub.html"> Digital Learning Hub | </a> <a href="cds.html"> CDS |</a><a href="cnt.html"> Contact Us |</a><a href="webm.html"> Web Email</a> <div> -->  </tr>
+        
+   </table>
+   <ul class="mainmenu">
+     <li> <a class="active" href="#overview">Overview</a></li>
+     <li> <a href="Departments">Books List</a></li>
+     <li> <a href="Members">Add Book</a></li>
+     <li> <a href="Students">Issue Book</a></li>
+     <li> <a href="Industry">Delete Book</a></li>
+     <li> <a href="Resources">Update Book</a></li>
+     <li> <a href="Showcase">Return Book</a></li>
+     <li> <a href="Oil">Add Student</a></li>
+     <li> <a href="faqs">FAQs</a></li>
+     <li> <a href="icaicc"><img src="cc.png"></a></li>
+     </ul>
+   <h2>  </h2>
+   <!--<form onsubmit="return f()" name="biodata">
+						<table width="100%" class="form" bgcolor="#D3F6F4">
+						
+							<tr id="td">
+								<td colspan="2">1.Name in full</td>
+							</tr>
+							<tr id="td">
+								<td id="td">First Name</td>
+								<td><input type="text" name="first_name" placeholder=" First Name" required/></td>
+							</tr>
+							<tr id="td">
+								<td id="td">Midle Name</td>
+								<td><input type="text" name="middle_name" placeholder=" Middle Name" /></td>
+							</tr>
+							<tr id="td">
+								<td id="td">Last Name</td>
+								<td><input type="text" name="last_name" placeholder=" Last Name" required/></td>
+							</tr>
+							<tr id="td">
+								<td id="td">2.gender</td><td><input type="radio" name="gender" required/>Male<input type="radio" name="gender" required/>Female</td>
+							</tr>
+							<tr id="td">
+								<td id="td">3.Date of Birth</td>
+								<td ><input type="date" name="date_of_birth" required/></td>
+							</tr>	
+							<tr id="td">
+								<td id="td">4.(a)Mothers Name</td>
+								<td><input type="text" name="mother_name" placeholder=" Mother's Name" required/></td>
+							</tr>	
+							<tr id="td">
+								<td id="td">4.(b)Fathers Name</td>
+								<td><input type="text" name="father_name" placeholder=" Father's Name" required/></td>
+							</tr>	
+							<tr id="td">
+								<td id="td" colspan="2">5.(a)Address for communication</td>
+							</tr>
+							<tr id="td">
+								<td id="td">Address Line 1</td>
+								<td><input type="text" name="communication_address_1" placeholder=" Address 1" required/></td>
+							</tr>	
+							<tr id="td">
+								<td id="td">Address Line 2</td>
+								<td><input type="text" name="communication_address_2" placeholder=" Address 2" required/></td>
+							</tr>	
+							<tr id="td">
+								<td id="td">Address Line 3</td>
+								<td><input type="text" name="communication_address_3" placeholder=" Address 3"/></td>
+							</tr>	
+							<tr id="td">
+								<td id="td">Address Line 4</td>
+								<td><input type="text" name="communication_address_4" placeholder=" Address 4"/></td>
+							</tr>	
+							<tr id="td">
+								<td id="td" >City</td>
+								<td><input type="text" name="city" placeholder=" City" required/>State code <input type="text" name="communication_address_state_code" placeholder=" State code" required/></td></tr>	
+							<tr id="td">
+								<td id="td">PIN</td>
+								<td><input type="text" name="communication_address_pin" placeholder=" PIN" required/>Phone No with std code <input type="text" name="communication_address_phone_number" placeholder=" Ph no" required/></td>
+							</tr>	
+							<tr id="td">
+								<td id="td">Country</td>
+								<td>
+									<select name="communication_address_country" required>
+										<option value="Select Country">Select Country</option>
+										<option value="India">INDIA</option>
+										<option value="Bhutan">Bhutan</option>
+										<option value="Srilanka">Srilanka</option>
+										<option value="Nepal">Nepal</option>
+									</select>
+								</td>
+							</tr>	
+							<tr id="td">
+								<td id="td">Email ID</td>
+								<td><input type="email" name="communication_address_email" placeholder=" E-Mail" required/>Mobile No <input type="text" name="communication_address_mobileno" placeholder=" Mobile No" required/></td>
+							</tr>	
+							<tr id="td">
+								<td id="td" colspan="2">5(b)Permenant Address same as communication address 5(a)above<input type="radio" name="same" onchange="address_copy(this.value)" value="yes"/>Yes<input value="no" onchange="address_copy(this.value)" type="radio" name="same" />No</td>
+							</tr>
+							<tr id="td">
+								<td id="td">Address Line 1</td>
+								<td><input type="text" name="permanent_communication_address_1" placeholder=" Address 1" required/></td>
+							</tr>	
+							<tr id="td">
+								<td id="td">Address Line 2</td>
+								<td><input type="text" name="permanent_communication_address_2" placeholder=" Address 2" required/></td>
+							</tr>	
+							<tr id="td">
+								<td id="td">Address Line 3</td>
+								<td><input type="text" name="permanent_communication_address_3" placeholder=" Address 3" /></td>
+							</tr>	
+							<tr id="td">
+								<td id="td">Address Line 4</td>
+								<td><input type="text" name="permanent_communication_address_4" placeholder=" Address 4" /></td>
+							</tr>	
+							<tr id="td">
+								<td id="td">City</td>
+								<td><input type="text" name="permanent_city" placeholder=" City" required/> State code <input type="text" name="permanent_communication_address_state_code" placeholder=" State code" required/></td>
+							</tr>	
+							<tr id="td">
+								<td id="td">PIN</td>
+								<td><input type="text" name="permanent_communication_address_pin" placeholder=" PIN" required/>Phone No with std code <input type="text" name="permanent_communication_address_phone_number" placeholder=" Ph No" required/></td>
+							</tr>	
+							<tr id="td">
+								<td id="td">Country</td>
+								<td>
+									<select name="permanent_communication_address_country" required>
+										<option value="Select Country">Select Country</option>
+										<option value="India">INDIA</option>
+										<option value="Bhutan">Bhutan</option>
+										<option value="Srilanka">Srilanka</option>
+										<option value="Nepal">Nepal</option>
+									</select>
+								</td>
+							</tr>	
+							<tr id="td">
+								<td id="td">Email id</td>
+								<td><input type="text" name="permanent_address_email" placeholder=" E-Mail" required/>Mobile No <input type="email" name="permanent_address_mobileno" placeholder=" Ph no" required/></td>
+							</tr>
+							<tr id="td">
+								<td id="td" colspan="2"><button type="button" onclick="validateForm();checker();">Submit</button>  <input type="reset" value="Reset" name="Reset"></td>
+                                                  
+							</tr>	
+						</table>
+					</form> -->
+				</td>
+			</tr>
+		</table>	
+	</body>
+	<script>
+
+      function validateForm() {
+     var fname = document.forms["biodata"]["first_name"].value;
+     if(fname==""){
+       alert("First Name must be filled out"); }
+        var mname = document.forms["biodata"]["middle_name"].value;
+     if(mname==""){
+       alert("Middle Name must be filled out");
+       return false;}
+     var lname = document.forms["biodata"]["last_name"].value;
+     if(lname==""){
+       alert("last Name must be filled out");}
+     var gender = document.forms["biodata"]["gender"].value;
+     if(gender==""){
+       alert("Select gender"); }
+      var dob = document.forms["biodata"]["date_of_birth"].value;
+     if(dob==""){
+       alert("Enter date of birth");}
+     var mname = document.forms["biodata"]["mother_name"].value;
+     if(mname==""){
+       alert("Enter mother's name"); }
+     var faname = document.forms["biodata"]["father_name"].value;
+     if(faname==""){
+       alert("Enter father's name"); }
+    var adr1 = document.forms["biodata"]["communication_address_1"].value;
+     if(adr1==""){
+       alert("Address must be entered");}
+    var adr2 = document.forms["biodata"]["communication_address_2"].value;
+     if(adr2==""){
+       alert("Address must be entered");}
+     var adr3 = document.forms["biodata"]["communication_address_3"].value;
+     if(adr3==""){
+       alert("Address must be entered");}
+     var adr4 = document.forms["biodata"]["communication_address_4"].value;
+     if(adr4==""){
+       alert("Address must be entered");}
+     var city = document.forms["biodata"]["city"].value;
+     if(city==""){
+       alert("Enter city");}
+    var adrsc = document.forms["biodata"]["communication_address_state_code"].value;
+     if(adrsc==""){
+       alert("Enter state code");}
+    var pin = document.forms["biodata"]["communication_address_pin"].value;
+     if(pin==""){
+       alert("Enter address pin");}
+      var phno = document.forms["biodata"]["communication_address_phone_number"].value;
+     if(phno==""){
+       alert("Enter Phone Number");}
+     var country = document.forms["biodata"]["communication_address_country"].value;
+     if(country=="" || country=="Select Country"){
+       alert("Enter Country");}
+ var emailid = document.forms["biodata"]["communication_address_email"].value;
+     if(emailid==""){
+       alert("Enter E-mail id");}
+  var mbno  = document.forms["biodata"]["communication_address_mobileno"].value;
+     if(mbno==""){
+       alert("Enter mobile Number");}
+   var padr1 = document.forms["biodata"]["permanent_communication_address_1"].value;
+     if(padr1==""){
+       alert("Permanent Address must be entered");}
+    var padr2 = document.forms["biodata"]["permanent_communication_address_2"].value;
+     if(padr2==""){
+       alert("Permanent Address must be entered");}
+     var padr3 = document.forms["biodata"]["permanent_communication_address_3"].value;
+     if(padr3==""){
+       alert("Permanent Address must be entered");}
+     var padr4 = document.forms["biodata"]["permanent_communication_address_4"].value;
+     if(padr4==""){
+       alert("Permanent Address must be entered");}
+     var pcity = document.forms["biodata"]["permanent_city"].value;
+     if(pcity==""){
+       alert("Enter Permanent city");}
+    var padrsc = document.forms["biodata"]["permanent_communication_address_state_code"].value;
+     if(padrsc==""){
+       alert("Enter Permanent state code");}
+    var ppin = document.forms["biodata"]["permanent_communication_address_pin"].value;
+     if(ppin==""){
+       alert("Enter Permanent address pin");}
+      var pphno = document.forms["biodata"]["permanent_communication_address_phone_number"].value;
+     if(pphno==""){
+       alert("Enter Permanent Phone Number");}
+     var pcountry = document.forms["biodata"]["permanent_communication_address_country"].value;
+     if(pcountry=="" || pcountry=="Select Country"){
+       alert("Enter Permanent Country");}
+ var pemailid = document.forms["biodata"]["permanent_address_email"].value;
+     if(pemailid==""){
+       alert("Enter Permanent E-mail id");}
+  var pmbno  = document.forms["biodata"]["permanent_communication_address_mobileno"].value;
+     if(pmbno==""){
+       alert("Enter Mobile Number");}
+   }
+
+
+
+
+     
+          function address_copy(str)
+		{
+			if(document.forms["biodata"]["same"].value=="yes")
+			{	
+				document.forms["biodata"]["permanent_communication_address_1"].value=document.forms["biodata"]["communication_address_1"].value;
+				document.forms["biodata"]["permanent_communication_address_2"].value=document.forms["biodata"]["communication_address_2"].value;
+				document.forms["biodata"]["permanent_communication_address_3"].value=document.forms["biodata"]["communication_address_3"].value;
+				document.forms["biodata"]["permanent_communication_address_4"].value=document.forms["biodata"]["communication_address_4"].value;
+				document.forms["biodata"]["permanent_city"].value=document.forms["biodata"]["city"].value;
+				document.forms["biodata"]["permanent_communication_address_pin"].value=document.forms["biodata"]["communication_address_pin"].value;
+				document.forms["biodata"]["permanent_communication_address_country"].value=document.forms["biodata"]["communication_address_country"].value;
+				document.forms["biodata"]["permanent_address_email"].value=document.forms["biodata"]["communication_address_email"].value;
+				document.forms["biodata"]["permanent_communication_address_state_code"].value=document.forms["biodata"]["communication_address_state_code"].value;
+				document.forms["biodata"]["permanent_communication_address_phone_number"].value=document.forms["biodata"]["communication_address_phone_number"].value;
+				document.forms["biodata"]["permanent_address_mobileno"].value=document.forms["biodata"]["communication_address_mobileno"].value;
+			}
+			else
+			{
+				document.forms["biodata"]["permanent_communication_address_1"].value="";
+				document.forms["biodata"]["permanent_communication_address_2"].value="";
+				document.forms["biodata"]["permanent_communication_address_3"].value="";
+				document.forms["biodata"]["permanent_communication_address_4"].value="";
+				document.forms["biodata"]["permanent_city"].value="";
+				document.forms["biodata"]["permanent_communication_address_pin"].value=""
+				document.forms["biodata"]["permanent_communication_address_country"].value="";
+				document.forms["biodata"]["permanent_address_email"].value="";
+				document.forms["biodata"]["permanent_communication_address_state_code"].value="";
+				document.forms["biodata"]["permanent_communication_address_phone_number"].value="";
+				document.forms["biodata"]["permanent_address_mobileno"].value="";
+			}
+		}
+
+		function checker()
+		{
+			communication_pin = document.forms["biodata"]["communication_address_pin"].value;
+			permanent_pin = document.forms["biodata"]["permanent_communication_address_pin"].value;
+			communication_phno = document.forms["biodata"]["permanent_communication_address_phone_number"].value;
+			permanent_phno = document.forms["biodata"]["communication_address_mobileno"].value;
+
+			if(isNaN(communication_pin))
+			{
+				alert("Communication PIN not a number.");
+			}
+			if(isNaN(permanent_pin))
+			{
+				alert("Permenant PIN not a number.");
+			}
+			if(isNaN(communication_phno))
+			{
+				alert("Communication phno should be a number.");
+			}
+			if(isNaN(permanent_phno))
+			{
+				alert("permanent phno should be a number.");
+			}
+			if(communication_phno.length!=10)
+			{
+				alert("Incorrect communication phone number");
+			}
+			if(permanent_phno.length!=10)
+			{
+				alert("Incorrect permanent phone number");
+			}
+		}
+	</script>
+</html>

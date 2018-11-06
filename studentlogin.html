@@ -1,0 +1,71 @@
+<html>
+	<head>
+		<title> Student - Login </title>
+		<style type="text/css">
+			div{
+				position: absolute;
+  				width: 350px;
+  				height: 400px;
+  				z-index: 15;
+  				top: 30%;
+  				left: 45%;
+  				margin: -100px 0 0 -150px;
+				background-color: white;
+    			padding: 25px;
+    			/*border: 10px solid navy;*/
+    			 border-radius: 25px;
+    			 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			}
+			input[type=text] {
+    			background: transparent;
+    			border: none;
+    			border-bottom: 2px solid rgb(26, 115, 232);
+    			width: 300px;
+			}
+			input[type=password] {
+    			background: transparent;
+    			border: none;
+    			border-bottom: 2px solid rgb(26, 115, 232);
+    			width: 300px;
+			}
+			a,p{
+				color: rgb(26, 115, 232);
+				font-size: 14px;
+				font-family:"Google Sans";
+				text-decoration: none;
+			}
+			.button {
+			background-color:rgb(26, 115, 232);
+    		display: inline-block;
+    		width: 80px;
+    		height: 40px;
+            }
+            .button:hover {background-color: #2C51AE}
+
+            .button:active {
+  			background-color: #2C51AE;
+  			box-shadow: 0 5px #666;
+  			transform: translateY(4px);
+            }
+		</style>
+	</head>
+	<body>
+			<div>
+                 <img src="bookslogo.png" height="70px" width="70px" alt="book_logo" align="middle"> <br><h3>Library Management - Admin</h3>
+
+					<table>
+						<tr>
+							<td><p>Username:</p><input type="text" name="username"></td>
+							
+						</tr>
+						<tr>
+							<td><p>Password:</p><input type="Password" name="Password"></td>
+						</tr>
+						<tr>
+							<td>  </td>
+						</tr>
+					</table><br><a href="">Forgot password?</a>
+					<button type="submit" class="button" value="Submit" name="Submit" style="float: right; color:white;  font-size: 15px; border-radius: 5px;">Submit</button>
+			</div>
+	</body>
+</html>
