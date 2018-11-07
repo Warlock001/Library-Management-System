@@ -4,7 +4,7 @@
 		<style type="text/css">
 			div{
 				position: absolute;
-  				width: 350px;
+  				width: 357px;
   				height: 400px;
   				z-index: 15;
   				top: 30%;
@@ -26,7 +26,7 @@
     			background: transparent;
     			border: none;
     			border-bottom: 2px solid rgb(26, 115, 232);
-    			width: 300px;
+    			width: 290px;
 			}
 			a,p{
 				color: rgb(26, 115, 232);
@@ -48,6 +48,7 @@
   			transform: translateY(4px);
             }
 		</style>
+		<!--<script type="text/javascript" src="studentlogin.js"></script> -->
 	</head>
 	<body>
 			<div>
@@ -59,7 +60,10 @@
 							
 						</tr>
 						<tr>
-							<td><p>Password:</p><input type="Password" name="Password"></td>
+							<td><p>Password:</p><input type="Password"  name="Password" class="masked" id="Password">  <button type="button" id="eye">
+    						<img src="https://cdn0.iconfinder.com/data/icons/feather/96/eye-16.png" alt="eye" />
+							</button></td>
+
 						</tr>
 						<tr>
 							<td>  </td>
@@ -68,4 +72,27 @@
 					<button type="submit" class="button" value="Submit" name="Submit" style="float: right; color:white;  font-size: 15px; border-radius: 5px;">Submit</button>
 			</div>
 	</body>
+	<script type="text/javascript">
+		function show() {
+    var p = document.getElementById('Password');
+    p.setAttribute('type', 'text');
+}
+
+function hide() {
+    var p = document.getElementById('Password');
+    p.setAttribute('type', 'password');
+}
+
+var pwShown = 0;
+
+document.getElementById("eye").addEventListener("click", function () {
+    if (pwShown == 0) {
+        pwShown = 1;
+        show();
+    } else {
+        pwShown = 0;
+        hide();
+    }
+}, false);
+	</script>
 </html>
