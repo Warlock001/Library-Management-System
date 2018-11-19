@@ -10,6 +10,7 @@
         width: 82%;
         margin-left: 9%;
         box-shadow: 1px -1px 11px -1px black;
+        background-color:#E7E4E4;
       }
 
     h2{ text-decoration:underline;
@@ -21,6 +22,11 @@
          overflow:hidden;
          background-color:#EBEFEF;
          height:50;
+         border-radius: 25px;
+       }
+
+       .mainmenu a:hover{
+        border-bottom: 3px solid red;
        }
 
         li {
@@ -29,16 +35,25 @@
 
     li a {
           display: block;
-          color: 3184FC;
+          
           text-align: center;
           padding: 14px 16px;
           text-decoration:none;
+        }
+    .navcolor{ 
+          background-color:#fbf7f8;
+        }
+        h3{
+          
+          font-size: 26px;
+        }
       </style>
      
      </head>
-      <body bgcolor="E7E4E4">
-        <center><img src="bookslogo.png" height="100px" width="100px" alt="book_logo" align="middle"> <h3>Library Management - Admin</h3></center>
+      <body bg><div class="navcolor">
+        <center><img src="bookslogo.png" height="100px" width="100px" alt="book_logo" align="middle"><h3>Library - Go / Admin </h3></center></div>
         <ul class="mainmenu">
+          <li> <a class="active" href=""></a></li>
      <li> <a class="active" href="#overview">Overview</a></li>
      <li> <a href='booklist.php'>Books List</a></li>
      <li> <a href="Members">Add Book</a></li>
