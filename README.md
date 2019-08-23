@@ -1,3 +1,3 @@
 # Library_Go
-Library Management System written in PHP.
+Integrated Library System (ILS) in PHP.
 
